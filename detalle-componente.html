@@ -1,0 +1,386 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>DTM Monitor - Detalle de Componente</title>
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/tailwindcss/2.2.19/tailwind.min.css" rel="stylesheet">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css" rel="stylesheet">
+</head>
+<body class="bg-gray-100">
+    <!-- Navbar -->
+    <nav class="bg-blue-900 text-white px-6 py-4">
+        <div class="flex justify-between items-center">
+            <div class="flex items-center space-x-4">
+                <img src="/api/placeholder/40/40" alt="Logo" class="h-10">
+                <h1 class="text-xl font-bold">DTM Monitor | Detalle de Componente</h1>
+            </div>
+            <div class="flex items-center space-x-4">
+                <span>Company Man | Santiago Codó</span>
+                <a href="admin.html" class="bg-blue-800 hover:bg-blue-900 px-3 py-1 rounded text-white mr-2">
+                    <i class="fas fa-user-shield mr-1"></i> Vista Admin
+                </a>
+                <button class="bg-blue-700 hover:bg-blue-800 px-3 py-1 rounded">
+                    <i class="fas fa-sign-out-alt mr-1"></i> Salir
+                </button>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Breadcrumb -->
+    <div class="container mx-auto px-4 py-3">
+        <div class="flex items-center text-sm text-gray-500">
+            <a href="index.html" class="hover:text-blue-600">Dashboard</a>
+            <i class="fas fa-chevron-right mx-2 text-xs"></i>
+            <a href="index.html" class="hover:text-blue-600">DTM-025 (SAI-652)</a>
+            <i class="fas fa-chevron-right mx-2 text-xs"></i>
+            <a href="index.html" class="hover:text-blue-600">Torre y Componentes Principales</a>
+            <i class="fas fa-chevron-right mx-2 text-xs"></i>
+            <span class="text-gray-700 font-medium">Subestructura</span>
+        </div>
+    </div>
+
+    <!-- Main Content -->
+    <div class="container mx-auto px-4 py-6">
+        <div class="bg-white rounded-lg shadow">
+            <!-- Header -->
+            <div class="p-6 border-b">
+                <div class="flex justify-between">
+                    <div>
+                        <h2 class="text-2xl font-bold text-gray-800">Subestructura</h2>
+                        <p class="text-gray-500">DTM-025 (SAI-652) | APO → LA</p>
+                    </div>
+                    <div class="flex space-x-3">
+                        <button class="bg-yellow-500 hover:bg-yellow-600 px-4 py-2 rounded text-white">
+                            <i class="fas fa-exclamation-triangle mr-1"></i> Reportar Problema
+                        </button>
+                        <button class="bg-blue-600 hover:bg-blue-700 px-4 py-2 rounded text-white">
+                            <i class="fas fa-file-export mr-1"></i> Exportar Datos
+                        </button>
+                    </div>
+                </div>
+                
+                <!-- Estado y KPIs -->
+                <div class="grid grid-cols-4 gap-6 mt-6">
+                    <div class="rounded-lg bg-gray-50 p-4">
+                        <p class="text-sm text-gray-500 mb-1">Estado Actual</p>
+                        <div class="flex items-center">
+                            <span class="inline-block w-3 h-3 rounded-full bg-yellow-500 mr-2"></span>
+                            <p class="text-lg font-semibold">En Progreso</p>
+                        </div>
+                    </div>
+                    <div class="rounded-lg bg-gray-50 p-4">
+                        <p class="text-sm text-gray-500 mb-1">Tiempo Transcurrido</p>
+                        <p class="text-lg font-semibold text-red-600">4d 10h 25m</p>
+                        <p class="text-xs text-red-600">+2d 5h vs. estándar</p>
+                    </div>
+                    <div class="rounded-lg bg-gray-50 p-4">
+                        <p class="text-sm text-gray-500 mb-1">Micro-movimientos</p>
+                        <p class="text-lg font-semibold text-red-600">7</p>
+                        <p class="text-xs text-red-600">+5 vs. estándar</p>
+                    </div>
+                    <div class="rounded-lg bg-gray-50 p-4">
+                        <p class="text-sm text-gray-500 mb-1">Impacto en DTM</p>
+                        <p class="text-lg font-semibold text-red-600">Crítico</p>
+                        <p class="text-xs text-gray-500">Componente en camino crítico</p>
+                    </div>
+                </div>
+            </div>
+            
+            <!-- Timeline del componente -->
+            <div class="p-6 border-b">
+                <h3 class="text-lg font-semibold mb-4">Cronología de Eventos</h3>
+                
+                <div class="relative">
+                    <!-- Línea de tiempo vertical -->
+                    <div class="absolute left-8 top-0 bottom-0 w-0.5 bg-gray-200"></div>
+                    
+                    <!-- Eventos -->
+                    <div class="space-y-6">
+                        <!-- Evento 1 -->
+                        <div class="relative flex items-start">
+                            <div class="absolute left-8 -ml-3 mt-1.5">
+                                <span class="h-6 w-6 rounded-full bg-green-500 flex items-center justify-center ring-8 ring-white">
+                                    <i class="fas fa-check text-white text-xs"></i>
+                                </span>
+                            </div>
+                            <div class="ml-16">
+                                <div class="flex items-center">
+                                    <h4 class="text-base font-medium">Desmontaje Iniciado</h4>
+                                    <span class="ml-2 px-2 py-0.5 text-xs rounded-full bg-green-100 text-green-800">
+                                        Completado
+                                    </span>
+                                </div>
+                                <span class="block text-sm text-gray-500">02/03/2025 09:20</span>
+                                <p class="mt-1 text-sm text-gray-600">
+                                    Inició el desmontaje de la subestructura en locación origen (APO).
+                                </p>
+                                <div class="mt-2">
+                                    <button class="text-blue-600 hover:text-blue-800 text-sm">
+                                        <i class="fas fa-camera mr-1"></i> Ver evidencia visual
+                                    </button>
+                                </div>
+                            </div>
+                        </div>
+                        
+                        <!-- Evento 2 -->
+                        <div class="relative flex items-start">
+                            <div class="absolute left-8 -ml-3 mt-1.5">
+                                <span class="h-6 w-6 rounded-full bg-green-500 flex items-center justify-center ring-8 ring-white">
+                                    <i class="fas fa-check text-white text-xs"></i>
+                                </span>
+                            </div>
+                            <div class="ml-16">
+                                <div class="flex items-center">
+                                    <h4 class="text-base font-medium">Transporte Completado</h4>
+                                    <span class="ml-2 px-2 py-0.5 text-xs rounded-full bg-green-100 text-green-800">
+                                        Completado
+                                    </span>
+                                </div>
+                                <span class="block text-sm text-gray-500">03/03/2025 14:40</span>
+                                <p class="mt-1 text-sm text-gray-600">
+                                    Subestructura transportada a locación destino (LA).
+                                </p>
+                                <div class="mt-2">
+                                    <button class="text-blue-600 hover:text-blue-800 text-sm">
+                                        <i class="fas fa-camera mr-1"></i> Ver evidencia visual
+                                    </button>
+                                </div>
+                            </div>
+                        </div>
+                        
+                        <!-- Evento 3 -->
+                        <div class="relative flex items-start">
+                            <div class="absolute left-8 -ml-3 mt-1.5">
+                                <span class="h-6 w-6 rounded-full bg-green-500 flex items-center justify-center ring-8 ring-white">
+                                    <i class="fas fa-check text-white text-xs"></i>
+                                </span>
+                            </div>
+                            <div class="ml-16">
+                                <div class="flex items-center">
+                                    <h4 class="text-base font-medium">Primera Posición en Destino</h4>
+                                    <span class="ml-2 px-2 py-0.5 text-xs rounded-full bg-green-100 text-green-800">
+                                        Completado
+                                    </span>
+                                </div>
+                                <span class="block text-sm text-gray-500">03/03/2025 16:20</span>
+                                <p class="mt-1 text-sm text-gray-600">
+                                    Descarga inicial de la subestructura en locación destino.
+                                </p>
+                                <div class="mt-2">
+                                    <button class="text-blue-600 hover:text-blue-800 text-sm">
+                                        <i class="fas fa-camera mr-1"></i> Ver evidencia visual
+                                    </button>
+                                </div>
+                            </div>
+                        </div>
+                        
+                        <!-- Evento 4 (Micro-movimiento) -->
+                        <div class="relative flex items-start">
+                            <div class="absolute left-8 -ml-3 mt-1.5">
+                                <span class="h-6 w-6 rounded-full bg-orange-500 flex items-center justify-center ring-8 ring-white">
+                                    <i class="fas fa-exchange-alt text-white text-xs"></i>
+                                </span>
+                            </div>
+                            <div class="ml-16">
+                                <div class="flex items-center">
+                                    <h4 class="text-base font-medium">Micro-movimiento #1</h4>
+                                    <span class="ml-2 px-2 py-0.5 text-xs rounded-full bg-orange-100 text-orange-800">
+                                        Reposicionamiento
+                                    </span>
+                                </div>
+                                <span class="block text-sm text-gray-500">04/03/2025 08:15</span>
+                                <p class="mt-1 text-sm text-gray-600">
+                                    Primer reposicionamiento para alinear con la bodega. Desplazamiento aproximado de 25cm al oeste.
+                                </p>
+                                <div class="mt-2">
+                                    <button class="text-blue-600 hover:text-blue-800 text-sm">
+                                        <i class="fas fa-camera mr-1"></i> Ver evidencia visual
+                                    </button>
+                                </div>
+                            </div>
+                        </div>
+                        
+                        <!-- Evento 5 (Micro-movimiento) -->
+                        <div class="relative flex items-start">
+                            <div class="absolute left-8 -ml-3 mt-1.5">
+                                <span class="h-6 w-6 rounded-full bg-orange-500 flex items-center justify-center ring-8 ring-white">
+                                    <i class="fas fa-exchange-alt text-white text-xs"></i>
+                                </span>
+                            </div>
+                            <div class="ml-16 bg-red-50 p-3 rounded-lg">
+                                <div class="flex items-center">
+                                    <h4 class="text-base font-medium">Micro-movimiento #7</h4>
+                                    <span class="ml-2 px-2 py-0.5 text-xs rounded-full bg-red-100 text-red-800">
+                                        Alerta
+                                    </span>
+                                </div>
+                                <span class="block text-sm text-gray-500">06/03/2025 11:30</span>
+                                <p class="mt-1 text-sm text-gray-600">
+                                    <i class="fas fa-exclamation-triangle text-red-500 mr-1"></i>
+                                    Séptimo reposicionamiento detectado. Excede el límite recomendado de micro-movimientos (2).
+                                    Se detectó un hundimiento en la locación que requirió una recompactación urgente.
+                                </p>
+                                <div class="mt-2">
+                                    <button class="text-blue-600 hover:text-blue-800 text-sm">
+                                        <i class="fas fa-camera mr-1"></i> Ver evidencia visual
+                                    </button>
+                                </div>
+                            </div>
+                        </div>
+                        
+                        <!-- Evento 6 (Planificado) -->
+                        <div class="relative flex items-start">
+                            <div class="absolute left-8 -ml-3 mt-1.5">
+                                <span class="h-6 w-6 rounded-full bg-gray-300 flex items-center justify-center ring-8 ring-white">
+                                    <i class="fas fa-clock text-white text-xs"></i>
+                                </span>
+                            </div>
+                            <div class="ml-16">
+                                <div class="flex items-center">
+                                    <h4 class="text-base font-medium">Posicionamiento Final</h4>
+                                    <span class="ml-2 px-2 py-0.5 text-xs rounded-full bg-gray-100 text-gray-800">
+                                        Pendiente
+                                    </span>
+                                </div>
+                                <span class="block text-sm text-gray-500">Estimado: 07/03/2025 14:00</span>
+                                <p class="mt-1 text-sm text-gray-600">
+                                    Posicionamiento final y aseguramiento de la subestructura.
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            
+            <!-- Galería de Evidencia Visual -->
+            <div class="p-6 border-b">
+                <h3 class="text-lg font-semibold mb-4">Evidencia Visual</h3>
+                
+                <div class="grid grid-cols-4 gap-4">
+                    <div class="border rounded-lg overflow-hidden">
+                        <div class="h-48 bg-gray-200">
+                            <img src="/api/placeholder/400/320" alt="Imagen Subestructura 1" class="w-full h-full object-cover">
+                        </div>
+                        <div class="p-3">
+                            <p class="text-xs text-gray-500">02/03/2025 09:20</p>
+                            <p class="text-sm font-medium">Desmontaje Iniciado</p>
+                        </div>
+                    </div>
+                    <div class="border rounded-lg overflow-hidden">
+                        <div class="h-48 bg-gray-200">
+                            <img src="/api/placeholder/400/320" alt="Imagen Subestructura 2" class="w-full h-full object-cover">
+                        </div>
+                        <div class="p-3">
+                            <p class="text-xs text-gray-500">03/03/2025 14:40</p>
+                            <p class="text-sm font-medium">Transporte Completado</p>
+                        </div>
+                    </div>
+                    <div class="border rounded-lg overflow-hidden">
+                        <div class="h-48 bg-gray-200">
+                            <img src="/api/placeholder/400/320" alt="Imagen Subestructura 3" class="w-full h-full object-cover">
+                        </div>
+                        <div class="p-3">
+                            <p class="text-xs text-gray-500">03/03/2025 16:20</p>
+                            <p class="text-sm font-medium">Primera Posición</p>
+                        </div>
+                    </div>
+                    <div class="border rounded-lg overflow-hidden">
+                        <div class="h-48 bg-gray-200">
+                            <img src="/api/placeholder/400/320" alt="Imagen Subestructura 4" class="w-full h-full object-cover">
+                        </div>
+                        <div class="p-3 bg-red-50">
+                            <p class="text-xs text-gray-500">06/03/2025 11:30</p>
+                            <p class="text-sm font-medium text-red-600">Micro-movimiento #7</p>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="mt-4 text-center">
+                    <button class="bg-gray-200 hover:bg-gray-300 px-4 py-2 rounded text-gray-700">
+                        <i class="fas fa-images mr-1"></i> Ver todas las imágenes (14)
+                    </button>
+                </div>
+            </div>
+            
+            <!-- Análisis y Observaciones -->
+            <div class="p-6">
+                <h3 class="text-lg font-semibold mb-4">Análisis y Observaciones</h3>
+                
+                <div class="bg-gray-50 rounded-lg p-4 mb-4">
+                    <h4 class="font-medium mb-2">Observaciones del Sistema</h4>
+                    <ul class="space-y-2 text-sm">
+                        <li class="flex items-start">
+                            <i class="fas fa-exclamation-circle text-red-500 mt-0.5 mr-2"></i>
+                            <span>Los micro-movimientos excesivos (7) indican problemas de coordinación o planificación inadecuada del posicionamiento inicial.</span>
+                        </li>
+                        <li class="flex items-start">
+                            <i class="fas fa-exclamation-circle text-red-500 mt-0.5 mr-2"></i>
+                            <span>Se detectó un retraso significativo (+2d 5h) respecto al tiempo estándar para este componente.</span>
+                        </li>
+                        <li class="flex items-start">
+                            <i class="fas fa-info-circle text-blue-500 mt-0.5 mr-2"></i>
+                            <span>Este componente está en el camino crítico del DTM y está impactando directamente en el tiempo total del proceso.</span>
+                        </li>
+                    </ul>
+                </div>
+                
+                <div class="mb-4">
+                    <h4 class="font-medium mb-2">Comentarios (3)</h4>
+                    
+                    <div class="space-y-3">
+                        <div class="bg-gray-50 rounded-lg p-3">
+                            <div class="flex justify-between items-center mb-1">
+                                <span class="font-medium text-sm">Gustavo Méndez (Coordinador DTM)</span>
+                                <span class="text-xs text-gray-500">05/03/2025 16:45</span>
+                            </div>
+                            <p class="text-sm">La locación destino presentó problemas de compactación no detectados durante la construcción. Se está trabajando en recompactar la zona para asegurar estabilidad.</p>
+                        </div>
+                        
+                        <div class="bg-gray-50 rounded-lg p-3">
+                            <div class="flex justify-between items-center mb-1">
+                                <span class="font-medium text-sm">Santiago Codó (Company Man)</span>
+                                <span class="text-xs text-gray-500">06/03/2025 08:30</span>
+                            </div>
+                            <p class="text-sm">Solicito a la compañía de torres verificar los niveles de la subestructura antes de continuar. Los reposicionamientos constantes están generando demoras significativas.</p>
+                        </div>
+                        
+                        <div class="bg-gray-50 rounded-lg p-3">
+                            <div class="flex justify-between items-center mb-1">
+                                <span class="font-medium text-sm">Josefina Bertolone (Drilling)</span>
+                                <span class="text-xs text-gray-500">06/03/2025 14:20</span>
+                            </div>
+                            <p class="text-sm">Las imágenes del 06/03 muestran que el equipo de compactación ya finalizó su trabajo. Se espera que mañana la subestructura quede en posición final.</p>
+                        </div>
+                    </div>
+                    
+                    <div class="mt-3">
+                        <textarea class="w-full border border-gray-300 rounded-lg p-3 text-sm" rows="2" placeholder="Agregar comentario..."></textarea>
+                        <div class="mt-2 flex justify-end">
+                            <button class="bg-blue-600 hover:bg-blue-700 px-3 py-1 rounded text-white text-sm">
+                                <i class="fas fa-paper-plane mr-1"></i> Enviar
+                            </button>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="flex justify-end space-x-3 mt-6">
+                    <a href="index.html" class="bg-gray-200 hover:bg-gray-300 px-4 py-2 rounded text-gray-700 inline-block">
+                        <i class="fas fa-arrow-left mr-1"></i> Volver a DTM
+                    </a>
+                    <button class="bg-blue-600 hover:bg-blue-700 px-4 py-2 rounded text-white">
+                        <i class="fas fa-file-export mr-1"></i> Generar Reporte
+                    </button>
+                </div>
+            </div>
+        </div>
+    </div>
+    
+    <!-- Footer -->
+    <footer class="bg-gray-800 text-white px-6 py-4 mt-6">
+        <div class="container mx-auto text-center text-sm">
+            <p>© 2025 DTM Monitor - Desarrollado por AXOL</p>
+        </div>
+    </footer>
+</body>
+</html>
